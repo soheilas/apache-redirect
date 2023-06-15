@@ -23,7 +23,7 @@ echo "<?php header('Location: http://$redirect_url/'); ?>" | sudo tee "$website_
 sudo systemctl restart apache2
 
 # Print completion message in red
-echo -e "\e[31mInstallation and configuration completed successfully.\e[0m"
+echo -e "\e[31mInstallation and configuration completed successfully.\e[0m\n"
 
 # Print server IP and redirect information
-echo -e "\e[31m$server_ip redirect to $redirect_url\e[0m"
+echo -e "\e[1m\e[31m$server_ip redirect to $redirect_url\e[0m"
